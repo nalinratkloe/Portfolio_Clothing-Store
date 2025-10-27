@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Decemminer</title>
+
+    <link rel="stylesheet" href="clothes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<head>
+<style>
+* {box-sizing:border-box;}
+    
+body{font-family: "Prompt";
+    font-size: 16px;
+    margin: 0%;}
+
+.item-H{grid-area: header;
+        height: 190px;
+        margin: 0%;}
+
+.item-M{grid-area: main;
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        margin: 0%;}
+
+.item-R{grid-area: rside;
+        height: 100%;
+        margin: 0%; }
+
+.item-L{grid-area: lside;
+        height: 100%;
+        margin: 0%;}
+
+.item-F{grid-area: footer;
+        height: 100px;
+        margin: 0%;}
+
+.gridcontainer{
+        display:grid;
+        grid-template-areas:
+        'header header header header header'
+        'lside main main main rside'
+        'footer footer footer footer footer';
+        grid-gap: 0px;
+        padding: 0px;
+    }
+.item{
+        background-image: url("image/decemminer.JPG");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 0px;
+        font-size: 18px;
+        text-align: center;
+}
+
+.rtem{
+        background-color: rgb(255, 221, 221);
+        padding: 0px;
+        font-size: 16px;
+        text-align: center;
+
+}
+.ftem{
+        background-color: rgb(219, 184, 184);
+        padding: 5px;
+        font-size: 14px;
+        text-align: center;
+
+}
+
+
+.h1{
+    text-align: center;
+    font-family: "Parisienne";
+    color: white; 
+    font-size: 36px;
+}
+
+.mtem{  background-color: rgb(255, 221, 221);
+        padding : 0px;
+        font-size: 16px;
+        text-align: center;
+
+}
+
+.h3{
+    text-align: center;
+    color:black; 
+    font-size: 20px;  
+}
+
+.tran {
+    text-align: center;
+  }
+.tran a {
+    background-color: rgb(205, 233, 255) ;
+    color: black;
+    font-size: 22px;
+    display: block;
+    border: 2px solid black;
+    width: 130px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 5%;
+  }
+  
+.tran a:hover {
+    background-color: rgba(73, 181, 231, 0.521);
+  }
+
+a:hover {
+    background-color: white;
+    color :#000;
+  }
+
+.container {
+        box-sizing:border-box;
+        border: 3px solid rgb(14, 13, 53);
+        font-family: "Prompt";
+        float: center;
+        padding:30px;
+        margin: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+}
+
+.content{
+        text-align: right;
+        columns: 2;
+}
+
+}
+
+</style>
+</head> 
+
+<body>
+    <div class="gridcontainer">
+        <div class="item-H item">
+            <img src="image/Larts-logo.PNG" style="height:50px; float: left; padding: 5px 0px 0px 10px;" alt="L'arts logo"><br>
+            <div class="h1">
+                <h1>Decemminer</h1>
+            </div>
+        </div>
+
+        <div class="item-L rtem">
+            <img src="image/เอี๊ยม.GIF" style="width: 210px; height: 250px; float: left;" alt="ชุดเอี๊ยม"><br>
+            <img src="image/รองเท้า.GIF" style="width: 210px; height: 250px; float: left;" alt="รองเท้า">
+        </div>
+
+        <div class="item-M mtem">
+            <form action="https://httpbin.org/post" method="POST">
+                <div class="h3">
+                    <h3>สร้างบัญชีผู้ใช้ของคุณ</h3>
+                </div>
+                <div class="container">
+                    <div class ="content" >
+                        <label for="fname">ชื่อ</label>
+                        <input type="text" id="fname" name="first_name"><br><br>
+                        <label for="lname">สกุล</label>
+                        <input type="text" id="lname" name="last_name"><br><br>
+                        <label for="Gender">เพศ</label>
+                            <select id= "Gender" name="Gen_der" style="font-family: prompt; font-size: 14px;">
+                                <option value="M">ชาย</option>
+                                <option value="W">หญิง</option>
+                                <option value="OT">อื่นๆ</option>
+                            </select>
+                        </label><br><br>
+                        <label for="birthday">วัน/เดือน/ปีเกิด</label>
+                        <input type="date" id="birthday"  name="birthday"></label><br><br>
+                        <label for="pnumber">เบอร์โทรศัพท์</label>
+                        <input type="text" id="pnumber" name="phone_number"><br><br><br>
+                        <label for="text">ที่อยู่สำหรับจัดส่ง</label><br>
+                        <textarea id="address" name="ad_dress" rows="4" col="1"></textarea><br><br>
+                        <label for="email">อีเมล</label>
+                        <input type="email" id="email" name="email_address"><br><br>
+                        <label for="pword">รหัสผ่าน</label>
+                        <input type="password" id="pword" name="pass_word"><br><br>
+                        <input type="submit" style="font-family: prompt;font-size: 20px; background-color: rgb(189, 255, 159);" value="ยืนยัน">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="item-R rtem">
+            <div class="tran" style="padding: 40px 0px 10px 0px";>
+                <center><a href="index.html" style="text-align:center; float:center; font-size: 22spx;";>Home</a></center>
+            </div>
+            <p>กลับสู่หน้าหลัก เพื่อเลือกสินค้าที่คุณถูกใจ!</p>
+        </div>
+
+        <div class="item-F ftem">
+            <address>
+                คณะศิลปศาสตร์ มหาวิทยาลัยธรรมศาสตร์ ศูนย์รังสิต</b><br>
+                9 ม.18 ถ.พหลโยธิน ต.คลองหนึ่ง<br>
+                อ.คลองหลวง จ.ปทุมธานี 12121<br>
+                Tel. +66 (0) 2564 4440-79
+            </address>
+        </div>
+    </div>
+</body>
+
+</html>

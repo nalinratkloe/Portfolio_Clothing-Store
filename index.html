@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Decemminer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<head>
+<style>
+* {box-sizing:border-box;}
+    
+body{font-family: "Prompt";
+    font-size: 16px;
+    margin: 0%;}
+
+.item-H{grid-area: header;
+        height: 230px;
+        margin: 0%;}
+
+.item-M{grid-area: main;
+        max-width: 100%;
+        height: 100%;
+        margin: 0%;}
+
+.item-R{grid-area: rside;
+        max-width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 40px}
+
+.item-F{grid-area: footer;
+        height: 100px;
+        margin: 0%;}
+
+.gridcontainer{
+        display:grid;
+        grid-template-areas:
+        'header header header header header'
+        'main main main rside rside'
+        'footer footer footer footer footer';
+        grid-gap: 0px;
+        padding: 0px;
+    }
+.item{
+        background-image: url("image/header.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 0px;
+        font-size: 18px;
+        text-align: center;
+}
+
+.mtem{  background-color: white;
+        padding : 0px;
+        font-size: 16px;
+        text-align: center;
+
+}
+
+.rtem{
+        background-color: rgb(245, 202, 202);
+        padding: 40px;
+        font-size: 16px;
+        text-align: center;
+
+}
+.ftem{
+        background-color: rgb(219, 184, 184);
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+
+}
+
+
+.a1{
+     max-width: 100%;
+     height: 270px;
+     border: 2px solid none;
+     background-color: none;
+     font-size: 16px;
+     box-sizing: border-box;
+     margin: 30px;
+     text-align: center;
+}
+
+
+
+.h1{
+    text-align: center;
+    font-family: "Parisienne";
+    color: white; 
+    font-size: 36px;
+}
+
+.h3{
+    text-align: center;
+    color:black; 
+    font-size: 18px;  
+}
+.p{
+    font-family: "Prompt";
+    padding: 5px;
+    text-align: left;
+}
+.containerpic{
+    position: relative;
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+}
+
+.image{
+    display:;
+    width: 200px;
+    height: 230px;
+}
+
+.overlay{
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+}
+
+.containerpic:hover .overlay{
+    opacity: 1;
+}
+
+.pic{
+    position: absolute;
+    width: 200px;
+    height: 230px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.container:hover .overlayFade{
+    width: 100%;
+}
+.overlayFade{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+
+.tran {
+    text-align: center;
+  }
+.tran a {
+    background-color: rgb(205, 233, 255) ;
+    color: black;
+    font-size: 22px;
+    display: block;
+    border: 2px solid black;
+    width: 130px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 5%;
+  }
+  
+.tran a:hover {
+    background-color: rgba(73, 181, 231, 0.521);
+  }
+
+a:hover {
+    background-color: white;
+    color :#000;
+  }
+
+.container {
+        box-sizing:border-box;
+        border:none;
+        font-family: "Prompt";
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+}
+
+
+
+}
+
+</style>
+</head> 
+
+<body>
+    <div class="gridcontainer">
+        <div class="item-H item">
+            <img src="image/Larts-logo.PNG" style="height:60px; float: left; padding: 5px 0px 0px 10px;" alt="L'arts logo"><br>
+            <div class="h1">
+                <h1>Decemminer</h1>
+            </div>
+        </div>
+
+        <form action="https://httpbin.org/post" method="POST">
+            <div class="item-M mtem">
+                <div class="p">
+                    <p>นลินรัตน์ เกลอแก้ว 6206610310</p>
+                </div>
+                <div class="container">
+                    <div class="a1">
+                        <div class="containerpic">
+                            <img src= "image/ไหมพรม1.JPG" alt="เสื้อไหมพรม" class="image">
+                            <div class="overlay overlayFade">
+                                <div class="pic">
+                                    <img src="image/ไหมพรม2.JPG" ait="เสื้อไหมพรม" class="image">
+                                </div>
+                            </div>
+                            <input type="checkbox" id="t1" name="tops" value="Cardigan">
+                            <label for="t1">Crop Knit Cardigan</label><br>
+                            <span style="font-size: 15px;">990 บาท</span>
+                        </div>
+                    </div>
+
+                    <div class="a1">
+                        <div class="containerpic">
+                            <img src="image/เสื้อกั๊ก1.JPG" alt="เสื้อกั๊ก" class="image">
+                            <div class="overlay overlayFade">
+                                <div class="pic">
+                                    <img src="image/เสื้อกั๊ก2.JPG" alt="เสื้อกั๊ก" class="image">
+                                </div>
+                            </div>
+                            <input type="checkbox" id="t2" name="tops" value="Vest">
+                            <label for="t2">Mixed Knit Vest</label><br>
+                            <span style="font-size: 15px;">990 บาท</span>
+                        </div>
+                    </div>
+
+                    <div class="a1">
+                        <div class="containerpic">
+                            <img src="image/เสื้อยืด1.JPG" alt="เสื้อยืด" class="image" >
+                            <div class="overlay overlayFade">
+                                <div class="pic">
+                                    <img src="image/เสื้อยืด2.JPG" alt="เสื้อยืด" class="image">
+                                </div>
+                            </div>
+                            <input type="checkbox" id="t3" name="tops" value="T-Shirt">
+                            <label for="t3">Mint T-shirt</label><br>
+                            <span style="font-size: 15px;">490 บาท</span>
+                        </div>
+                    </div>
+
+                    <div class="a1">
+                        <div class="containerpic">
+                            <img src="image/ฮู้ด1.JPG" alt="ครอปฮู้ด" class="image" >
+                            <div class="overlay overlayFade">
+                                <div class="pic">
+                                    <img src="image/ฮู้ด2.JPG" alt="ครอปฮู้ด" class="image">
+                                </div>
+                            </div>
+                            <input type="checkbox" id="t4" name="tops" value="Crop-Hood">
+                            <label for="t4">Crop Hood</label><br>
+                            <span style="font-size: 15px;">790 บาท</span>
+                        </div>
+                    </div>
+
+                    <div class="a1">
+                        <div class="containerpic">
+                            <img src="image/ยีนส์1.PNG" alt="กางเกงยีนส์" class="image" >
+                            <div class="overlay overlayFade">
+                                <div class="pic">
+                                    <img src="image/ยีนส์2.PNG" alt="กางเกงยีนส์" class="image">
+                                </div>
+                            </div>
+                            <input type="checkbox" id="b1" name="bottoms" value="Jeans">
+                            <label for="b1">Jeans</label><br>
+                            <span style="font-size: 15px;">990 บาท</span>
+                        </div>
+                    </div>
+
+                    <div class="a1">
+                        <div class="containerpic">
+                            <img src="image/กางเกง1.JPG" alt="กางเกงขายาว" class="image">
+                            <div class="overlay overlayFade">
+                                <div class="pic">
+                                    <img src="image/กางเกง2.JPG" alt="กางเกงขายาว" class="image">
+                                </div>
+                            </div>
+                            <input type="checkbox" id="b2" name="bottoms" value="Pants">
+                            <label for="b2">Check Wide Pants</label><br>
+                            <span style="font-size: 15px;">890 บาท</span>
+                        </div>
+                    </div>
+
+                    <div class="a1">
+                        <div class="containerpic">
+                            <img src="image/ขาสั้น1.JPG" alt="กางเกงขาสั้น" class="image">
+                            <div class="overlay overlayFade">
+                                <div class="pic">
+                                    <img src="image/ขาสั้น2.JPG" alt="กางเกงขาสั้น" class="image">
+                                </div>
+                            </div>
+                            <input type="checkbox" id="b3" name="bottoms" value="Shorts">
+                            <label for="b3">Bear Half Pants</label><br>
+                            <span style="font-size: 15px;">490 บาท</span>
+                        </div>
+                    </div>
+
+                    <div class="a1">
+                        <div class="containerpic">
+                            <img src="image/ยีนสั้น1.JPG" alt="กางเกงยีนส์ขาสั้น" class="image">
+                            <div class="overlay overlayFade">
+                                <div class="pic">
+                                    <img src="image/ยีนสั้น2.JPG" alt="กางเกงยีนส์ขาสั้น" class="image">
+                                </div>
+                            </div>
+                            <input type="checkbox" id="b4" name="bottoms" value="Denim-Shorts">
+                            <label for="b4">Denim Shorts</label><br>
+                            <span style="font-size: 15px;">590 บาท</span>
+                        </div>
+                    </div>
+
+                    <div class="a1">
+                        <div class="containerpic">
+                            <img src="image/เดรส1.JPG" alt="เดรสสั้น" class="image">
+                            <div class="overlay overlayFade">
+                                 <div class="pic">
+                                    <img src="image/เดรส2.JPG" alt="เดรสสั้น" class="image">
+                                </div>
+                            </div>
+                            <input type="checkbox" id="d" name="dress" value="dress">
+                            <label for="c1">Heart Check Dress</label><br>
+                            <span style="font-size: 15px;">890 บาท</span>
+                        </div>
+                    </div>
+
+                    <div class="a1">
+                        <div class="containerpic">
+                            <img src="image/เดรสฟ้า1.JPG" alt="เดรสสั้น" class="image">
+                            <div class="overlay overlayFade">
+                                 <div class="pic">
+                                    <img src="image/เดรสฟ้า2.JPG" alt="เดรสสั้น" class="image">
+                                </div>
+                            </div>
+                            <input type="checkbox" id="d" name="dress" value="dress">
+                            <label for="c2">Tie-Dye Dress</label><br>
+                            <span style="font-size: 15px;">790 บาท</span>
+                        </div>
+                    </div>
+                            
+                    <div class="a1">
+                        <div class="containerpic">
+                            <img src="image/หมวก1.JPG" alt="หมวก" class="image">
+                            <div class="overlay overlayFade">
+                                <div class="pic">
+                                    <img src="image/หมวก2.JPG" alt="หมวก" class="image">
+                                 </div>
+                            </div>
+                            <input type="checkbox" id="ac1" name="bottoms" value="Cap">
+                            <label for="c3">Letter C Cap</label><br>
+                            <span style="font-size: 15px;">390 บาท</span>
+                        </div>
+                    </div>
+                        
+                    <div class="a1">
+                        <div class="containerpic">
+                            <img src="image/เข็มขัด1.PNG" alt="เข็มขัด" class="image">
+                            <div class="overlay overlayFade">
+                                <div class="pic">
+                                    <img src="image/เข็มขัด2.PNG" alt="เข็มขัด" class="image">
+                                </div>
+                            </div>
+                            <input type="checkbox" id="ac2" name="accessories" value="Belt">
+                            <label for="c4">Heart Buckle Belt</label><br>
+                            <span style="font-size: 15px;">290 บาท</span>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" style="font-family: prompt ;font-size: 20px; width: 120px; padding: 3px ;margin: 20px; float: right;background-color: rgb(174, 255, 128); float:center;height: 40px; color: rgb(21, 34, 73)" value= "ชำระเงิน";>
+            </div>
+        </form>
+        <div class="item-R rtem">
+            <form action="https://httpbin.org/post" method="POST">
+                <div style="border: 3px solid rgb(128, 20, 20);padding: 20px";>
+                    <div class="h3">
+                        <h3>LOG IN</h3>
+                    </div>
+                    <label for="uname">User Name</label><br>
+                    <input type="text" id="uname" ; name="user_name"><br>
+                    <label for="pword">Password</label><br>
+                    <input type="password" id="pword" name="pass_word"><br><br>
+                    <input type="submit" style="font-family: prompt; font-size: 18px; background-color: rgb(242, 255, 208);" value="Login">
+                    <br><br>
+                    <p>คุณยังไม่มีบัญชีผู้ใช้ ใช่หรือไม่?</p>
+                    <div class="tran">
+                        <center><a href="member.html" style="text-align:center; float:center; font-size: 22px;";>สมัครสมาชิก</a></center>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="item-F ftem">
+            <address>
+                คณะศิลปศาสตร์ มหาวิทยาลัยธรรมศาสตร์ ศูนย์รังสิต</b><br>
+                9 ม.18 ถ.พหลโยธิน ต.คลองหนึ่ง<br>
+                อ.คลองหลวง จ.ปทุมธานี 12121<br>
+                Tel. +66 (0) 2564 4440-79
+            </address>
+        </div>
+    </div>
+</body>
+
+</html>
